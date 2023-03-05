@@ -18,4 +18,5 @@
 | Limited Training Data | Use techniques such as data augmentation, transfer learning, or semi-supervised learning to generate more training data or make better use of the available data. |
 | Model Selection | Use techniques such as cross-validation, grid search, or Bayesian optimization to select the best model and hyperparameters for a given task. |
 | Model Compression | Use techniques such as pruning, quantization, or knowledge distillation to reduce the size of the model while maintaining its accuracy. |
+| Concept Drift Detection: Refers to the phenomenon where the statistical properties of the data distribution change over time, leading to a decrease in the model's performance. |	Use techniques such as monitoring the prediction errors, comparing the model's performance on the current data with the historical data, or using statistical tests to detect changes in the data distribution.|
 
