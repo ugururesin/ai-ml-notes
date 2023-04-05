@@ -13,8 +13,13 @@
 | SARSA | Reinforcement Learning | Can be used to learn optimal policies for decision-making tasks | Can be slow to converge, sensitive to hyperparameters | Overfitting, Slow convergence | Regularization, Transfer learning, Data augmentation, Early stopping |
 
 ### TOKENIZATION FOR NLP
-| Method | Example | Advantages | Disadvantages |
-|--------|---------|------------|---------------|
-| Bag-of-Words | ["The cat in the hat", "The dog in the yard"] | - Simple and easy to implement <br> - Works well for small datasets | - Ignores word order and context <br> - Does not capture relationships between words |
-| TF-IDF | ["The cat in the hat", "The dog in the yard"] | - Considers word frequency and document frequency <br> - More informative representation than Bag-of-Words | - Can still miss important context <br> - Requires tuning of parameters |
-| Word Embeddings | ["The cat in the hat", "The dog in the yard"] | - Captures relationships between words <br> - Able to represent new, unseen words | - Can be computationally expensive <br> - May not perform well for rare words |
+| Tokenization Method | Example | Advantages | Disadvantages |
+| --- | --- | --- | --- |
+| Whitespace tokenizer | "This is a sentence." | Simple, easy to implement | Does not handle punctuation, special characters well |
+| Punctuation tokenizer | "This is a sentence." | Handles punctuation well | May split contractions and compound words |
+| Word tokenizer | "This is a sentence." | Handles contractions and compound words well | May split words with hyphens or slashes |
+| Regex tokenizer | "This is a sentence." | Highly customizable | Requires knowledge of regular expressions |
+| Sentence tokenizer | "This is a sentence. This is another sentence." | Splits text into sentences | May struggle with abbreviations or titles |
+| Byte Pair Encoding tokenizer | "This is a sentence." | Handles rare or out-of-vocabulary words | Can result in large vocabularies |
+| Sentencepiece tokenizer | "This is a sentence." | Handles rare or out-of-vocabulary words, highly customizable | Requires additional libraries, may be slower |
+
